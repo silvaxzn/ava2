@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Minha Lista de Tarefas</h1>
+    
+    <form id="task-form" class="input-group">
+      <input type="text" id="task-input" placeholder="Digite a tarefa" autocomplete="off">
+      <button type="submit" id="add-btn">Adicionar</button>
+    </form>
+
+    <p id="error-message" class="error-hidden">Por favor, digite o texto da tarefa!</p>
+
+    <div class="counter-group">
+      Total de tarefas: <span id="task-counter">0</span>
+    </div>
+
+    <ul id="task-list"></ul>
+  </main>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
